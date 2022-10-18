@@ -1,0 +1,16 @@
+{
+  "development": {
+    "dialect": "mysql",
+    "storage": "library.db"
+  },
+
+  "test": {
+    "dialect": "mysql",
+    "storage": "library.db"
+  },
+
+  "production": {
+    "dialect": "mysql",
+    "storage": "library.db"
+  }
+}
