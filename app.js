@@ -3,11 +3,24 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const sequelize = require('./models').sequelize;
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+const authenticate = async () => {
+  try {
+    await sequelize.authenticate();
+    console.log('A connection has been established!');
+  } catch (error) {
+    console.error('A connection has not been established...');
+  }
+}
+authenticate();
+sequelize.sync();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
