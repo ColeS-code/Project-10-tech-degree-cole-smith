@@ -24,6 +24,9 @@ module.exports = (sequelize, DataTypes) => {
         notNull: {
           msg: 'Please provide a value for "author"'
         },
+        notEmpty: {
+          msg: 'Please provide a vaue for "author"',
+        },
       },
     },
 
