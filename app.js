@@ -42,7 +42,7 @@ app.use(function(req, res, next) {
   err.message = 'Sorry page not found.';
   message = "could not find the page youre looking for."
   console.log(err.message);
-  res.render('pag-not-found', {err, title: 'Page not found'});
+  res.render('page-not-found', {err, title: 'Page not found'});
 });
 
 // error handler
