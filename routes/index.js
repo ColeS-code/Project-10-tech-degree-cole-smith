@@ -19,7 +19,7 @@ router.get('/', asyncHandler(async (req, res) => {
 }));
 
 router.get('/books', asyncHandler (async (req, res) => {
-  res.render('index', {title: 'Books'})
+  res.render('index', {Book, title: 'Books'})
 }));
 
 router.get('/books/new', asyncHandler(async(req, res) => {
