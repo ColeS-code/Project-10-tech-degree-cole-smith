@@ -1,4 +1,5 @@
 var express = require('express');
+const book = require('../models/book');
 var router = express.Router();
 const Book = require('../models').Book;
 
@@ -19,7 +20,7 @@ router.get('/', asyncHandler(async (req, res) => {
 }));
 
 router.get('/books', asyncHandler (async (req, res) => {
-  res.render('index', {Book, title: 'Books'})
+  res.render('index', {book, title: 'Books'})
 }));
 
 router.get('/books/new', asyncHandler(async(req, res) => {
