@@ -51,13 +51,13 @@ router.get('/books/:id', asyncHandler(async(req, res) => {
   }
 }));
 // Posts the updated book back onto the current list of books
-router.post('/books/:id/update', asyncHandler(async (req, res) => {
+router.post('/books/:id', asyncHandler(async (req, res) => {
   let book;
   try {
     book = await Book.findByPk(req.params.id);
     if(book) {
       await book.update(req.body);
-      res.redirect("/books"); 
+      res.redirect('/books'); 
     } else {
       throw error;
     } // make sure correct book gets updated

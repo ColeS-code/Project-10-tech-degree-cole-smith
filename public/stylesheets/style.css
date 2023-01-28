@@ -1,16 +1,59 @@
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-left: 50px;
+  padding-top: 30px;  
 }
 
 a {
-  color: #00B7FF;
+  color: seagreen;
+  text-decoration: none;
+  font-weight: bold;
 }
+
  h1, title {
   color: green;
+  padding-bottom: 20px;
 }
-table {
-  display: flex;
-  align-items: center;
-  
+
+th {
+  text-align: left;
+  font: 20px "Garamond";
+  font-weight: bold;
+  padding-left: 10px;
+  border-bottom: 2px solid sandybrown;
+}
+
+td {
+  font: 18px "Garamond";
+  padding: 10px 10px 10px 10px;
+}
+
+a.button, input[type=submit] {
+  color: whitesmoke;
+  background: seagreen;
+  padding: 10px;
+}
+
+label {
+  font: 20px "Garamond";
+  font-weight: bold;
+  padding-right: 15px;
+  min-width: 100px;
+  display: inline-block;
+}
+
+input[type=text] {
+  margin-left: 10px;
+  width: 250px;
+}
+
+input[type=submit] {
+  font: 16px "Garamond";
+  font-weight: bold;
+  border: none;
+  cursor: crosshair;
+}
+
+form a.button, input[type=submit] {
+  margin-left: 125px;
 }
