@@ -57,3 +57,7 @@ input[type=submit] {
 form a.button, input[type=submit] {
   margin-left: 125px;
 }
+
+h2.error, ul.error {
+  color: red;
+}
